@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int T;
+	cin >> T;
+	while (T--)
+	{
+		int X, H, Y = 0, temp = 0, turn = 0;
+		cin >> X >> H;
+		while (temp < 5)
+		{
+			Y += X / 2;
+			turn++;
+			if (Y >= H)
+			{
+				break;
+			}
+			temp++;
+		}
+		while (Y < H)
+		{
+			Y += X;
+			turn++;
+			if (Y >= H)
+			{
+				break;
+			}
+		}
+		cout << turn << endl;
+	}
+	return 0;
+}
