@@ -1,0 +1,25 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int X,count1=0,count2=0;
+	   string S;
+	   cin>>S;
+	   X=S.size();
+	   for(int i=0;i<X;i++){
+	       if(S[i]=='A'||S[i]=='D'||S[i]=='O'||S[i]=='P'||S[i]=='Q'||S[i]=='R'){
+	           count1++;
+	       }
+	       else if(S[i]=='B'){
+	           count2++;
+	       }
+	   }
+	   cout<<count1+2*count2<<endl;
+	}
+	return 0;
+}
