@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int X,Y,sum;
+	    cin>>X>>Y;
+	    if(X<Y){
+	        for(int i=1;i<=(X+Y);i++){
+	           sum=X+Y+i;
+	            if(X+i>Y){
+	                cout<<sum-2<<endl;
+	                break;
+	            }
+	            
+	        }
+	    }
+	    else{
+	        for(int i=1;i<=(X+Y);i++){
+	           sum=X+Y+i;
+	            if(Y+i>X){
+	                cout<<sum-2<<endl;
+	                break;
+	            }
+	            
+	        }
+	    }
+	}
+	return 0;
+}
