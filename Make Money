@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int N,X,C,count=0,S1=0,S2=0;
+	    cin>>N>>X>>C;
+	    int A[N];
+	    for(int i=0;i<N;i++){
+	        cin>>A[i];
+	    }
+	    for(int i=0;i<N;i++){
+	        if((A[i]+C)<X){
+	            count++;
+	            S1+=X;
+	        }
+	        else{
+	            S2+=A[i];
+	        }
+	    }
+	    if(count==0){
+	        cout<<S2<<endl;
+	    }
+	    else{
+	        cout<<(S1+S2)-(count*C)<<endl;
+	    }
+	}
+	return 0;
+}
