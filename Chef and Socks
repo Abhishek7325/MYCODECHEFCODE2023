@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int jacketCost,sockCost, money,Remain;
+	cin>>jacketCost>>sockCost>>money;
+	Remain=money-jacketCost;
+	if((Remain/sockCost)%2==0){
+	    cout<<"Lucky Chef"<<endl;
+	}
+	else{
+	    cout<<"Unlucky Chef"<<endl;
+	}
+	return 0;
+}
