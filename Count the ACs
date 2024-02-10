@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int P,N;
+	    cin>>P;
+	    N=P/100;
+	        if(N+(P-N*100)<=10){
+	            cout<<N+(P-N*100)<<endl;
+	        }
+	        else{
+	            cout<<-1<<endl;
+	        }
+	    
+	}
+
+}
