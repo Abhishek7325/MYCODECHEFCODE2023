@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int A,B;
+	    cin>>A>>B;
+	    int X,Y;
+	    X=(A*100)/100;
+	    Y=(B*200)/100;
+	    if(100-X<200-Y){
+	        cout<<"FIRST"<<endl;
+	    }
+	    else if(100-X>200-Y){
+	        cout<<"SECOND"<<endl;
+	    }
+	    else{
+	        cout<<"BOTH"<<endl;
+	    }
+	}
+
+}
