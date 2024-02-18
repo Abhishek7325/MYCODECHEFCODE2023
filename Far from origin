@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+#include<math.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int X1,Y1,X2,Y2;
+	    cin>>X1>>Y1>>X2>>Y2;
+	    float A=pow(X1,2)+pow(Y1,2);
+	    float B=pow(X2,2)+pow(Y2,2);
+	    if(sqrt(A)>sqrt(B)){
+	        cout<<"ALEX"<<endl;
+	    }
+	    else if(sqrt(A)<sqrt(B)){
+	        cout<<"BOB"<<endl;
+	    }
+	    else{
+	        cout<<"EQUAL"<<endl;
+	    }
+	}
+
+}
