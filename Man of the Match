@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	// your code goes here
+	int T;
+	cin >> T;
+	while (T--)
+	{
+		int R[22], W[22], large[22];
+		for (int i = 0; i < 22; i++)
+		{
+			cin >> R[i];
+			cin >> W[i];
+		}
+		for (int i = 0; i < 22; i++)
+		{
+			large[i] = R[i] + 20 * W[i];
+		}
+		int *max = large;
+		max = max_element(large, large + 22);
+		int i = max - large;
+		cout << i + 1 << endl;
+	}
+}
