@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int N,A;
+	    cin>>N>>A;
+	    int length=sqrt(N);
+	    length=length*A;
+	    cout<<length<<endl;
+	}
+
+}
