@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	
+	string X;
+	cin>>X;
+    cout<<"K"<<X[2]<<X[3];
+
+}
