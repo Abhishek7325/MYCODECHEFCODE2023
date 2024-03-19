@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int N,M;
+	    cin>>N>>M;
+	    int A[N],count=0;
+	    for(int i=0;i<N;i++){
+	        cin>>A[i];
+	    }
+	    for(int i=0;i<N;i++){
+	        if(A[i]>=M){
+	            count++;
+	        }
+	        else{
+	            A[i+1]=A[i]+A[i+1];
+	        }
+	     }
+	     cout<<count<<endl;
+}
+}
