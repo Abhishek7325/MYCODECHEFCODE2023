@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int N,X,Y,count=0;
+	    cin>>N>>X>>Y;
+	    string S;
+	    cin>>S;
+	    for(int i=0;i<N-1;i++){
+	        if(S[i]!=S[i+1]){
+	            count=1;
+	            break;
+	        }
+	    }
+	    if(count==1){
+	        cout<<min(X,Y)<<endl;
+	    }
+	    else
+	    {
+	        cout<<0<<endl;
+	    }
+	   
+	}
+
+}
